@@ -69,14 +69,13 @@ formato:{
 
 PATH = "data/"
 URL = ''
-
 def escritura(data, URL):
     with open(f"{PATH}{URL}", "w") as archivo:
         json.dump(data, archivo, indent=4)
 
     pass
 
-def loadData(**data):
+def loadData(data, URL):
     file = (f"{PATH}{URL}")
     if(not file):
         escritura(data, URL)

@@ -6,16 +6,16 @@ import json as pel
 
 def Creador_Pelicula():
     print("Creando Pelicula")
-    Pelicula = input("Ingrese el Pelicula que quiere agregar")
+    Peliculas = input("Ingrese el Pelicula que quiere agregar")
     UBICAION ="Peliculas.json"
-    for i, key in Pelicula.value():
+    for i, key in Peliculas.value():
         input(f" Ingrese el atributo del Pelicula"[key])
-    cr.escritura(UBICAION, Pelicula)
+    cr.escritura(UBICAION, Peliculas)
 
 def Editor_Pelicula():
     URL = "peliculas.json"
-    for i in Pelicula:
-        for key in pelicula.keys():
+    for i in Peliculas:
+        for key in peliculas.keys():
             Desicion = input(f"Desea editar la seccion {i[key]} de la pelicula? S para si, espacio para no")
             if Desicion == "S":
                 input(f"Inserte el nuevo{i} de la pelicula?")

@@ -18,5 +18,7 @@ def Creador_Genero():
 
 
 def Lista_Genero():
-    for key, value in Generos.items():
+    UBICAION ="generos.json"
+    Listado = cr.loadData(UBICAION)
+    for key in Listado.items():
         print(key)

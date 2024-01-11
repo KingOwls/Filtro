@@ -1,0 +1,37 @@
+{
+    "peliculas":{
+        "P01":{
+            "id" : "P01",
+            "name" : "AAA",
+            "duracion":"90",
+            "Sinopsis":"ASDEWA",
+            "generos":{
+                "G01":{
+                "id" : "G01",
+                "nombre":"Accion"
+                }
+            },
+            "Actores":{
+                "A01":{
+                    "id" : "A01",
+                    "nombre":"Silvestre Stallone",
+                    "roles":"reparto"
+                }
+            },
+            "formato":{
+                "F01":{
+                    "id" : "F01",
+                    "nombre":"DVD",
+                    "Nrocopias": 2,
+                    "ValorPrestamo": 5000
+                },
+                "F02":{
+                    "id" : "F02",
+                    "nombre":"Blueray",
+                    "Nrocopias": 2,
+                    "ValorPrestamo": 8000
+                }
+            }
+        }
+    }
+}

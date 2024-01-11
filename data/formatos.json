@@ -1,0 +1,14 @@
+{
+    "F01":{
+        "id" : "F01",
+        "nombre":"DVD",
+        "Nrocopias": 2,
+        "ValorPrestamo": 5000
+    },
+    "F02":{
+        "id" : "F02",
+        "nombre":"Blueray",
+        "Nrocopias": 2,
+        "ValorPrestamo": 8000
+    }
+}

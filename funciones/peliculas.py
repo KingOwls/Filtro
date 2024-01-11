@@ -2,43 +2,7 @@ import funciones.corefile as cr
 import funciones.actores as act
 import funciones.formatos as form
 import funciones.generos as gn
-blockbuster:{
-    "peliculas":{
-        "P01":{
-            "id" : "P01",
-            "name" : "",
-            "duracion":"",
-            "Sinopsis":"",
-            "generos":{
-                "G01":{
-                "id" : "G01",
-                "nombre":""
-                }
-            },
-            "Actores":{
-                "A01":{
-                    "id" : "A01",
-                    "nombre":"",
-                    "roles":"Protragonista o antagonista o reparto"
-                }
-            },
-            "formato":{
-                "F01":{
-                    "id" : "F01",
-                    "nombre":"DVD",
-                    "Nrocopias": 2,
-                    "ValorPrestamo": 5000
-                },
-                "F02":{
-                    "id" : "F02",
-                    "nombre":"Blueray",
-                    "Nrocopias": 2,
-                    "ValorPrestamo": 8000
-                }
-            }
-        }
-    }
-}
+
 def Creador_Pelicula():
     print("Creando Pelicula")
     Pelicula = input("Ingrese el Pelicula que quiere agregar")
@@ -56,16 +20,31 @@ def Editor_Pelicula():
                 input(f"Inserte el nuevo{i} de la pelicula?")
                 break
     pass
-def Elminar_Pelicula():	
+
+
+def Elminar_Pelicula():
     Destruccion = int(input("De el codigo de la pelicula a elimnar"))
     for i in lista_Pelicula():
         for key in lista_Pelicula.keys():
             if key == Destruccion:
                 pop.pelicula(i)
-    pass
+
 def Elminar_Actor():
-    pass
+    Destruccion = int(input("De el codigo del actor a elimnar"))
+    for i in act.Lista_Actores():
+        for key in act.Lista_Actores():
+            if key == Destruccion:
+                pop.pelicula(i)
+
 def Buscar_Pelicula():
-    pass
+    URL = "peliculas.json"
+    buscador = int(input("Pelicula a buscar..."))
+    for i, key in cr.loadData(URL):
+        if key == buscador:
+            print(f"la pelicula es {i[key]} y su sinopsis es sinopsis" )
+
 def lista_Pelicula():
-    pass
+    URL = "peliculas.json"
+    for i in cr.loadData(URL):
+        print(i[name])
+

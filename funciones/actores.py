@@ -22,6 +22,6 @@ def Creador_Actores():
     cr.escritura(UBICAION, Actores)
 
 def Lista_Actores():
-    #for key, value in Actores.items():
-        #print(key)
+    for key, value in Actores.items():
+        print(key)
     pass

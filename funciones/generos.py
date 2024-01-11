@@ -4,7 +4,7 @@ def Creador_Genero():
     UBICAION ="generos.json"
     print("Creando Genero")
     genero = input("Ingrese el genero que quiere agregar")
-    Discancia_Genero= int(input("Deme el codigo del Genero"))
+    Discancia_Genero= input("Deme el codigo del Genero")
     Genero : {
             "Id": Discancia_Genero ,
             "Name": genero

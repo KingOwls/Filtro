@@ -30,6 +30,8 @@ def Creador_Pelicula():
 
 def Editor_Pelicula():
     URL = "peliculas.json"
+    cr.loadData(dict, URL)
+    
     for i in Peliculas:
         for key in peliculas.keys():
             Desicion = input(f"Desea editar la seccion {i[key]} de la pelicula? S para si, espacio para no")

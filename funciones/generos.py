@@ -5,12 +5,11 @@ def Creador_Genero():
     print("Creando Genero")
     genero = input("Ingrese el genero que quiere agregar")
     Discancia_Genero= int(input("Deme el codigo del Genero"))
-    Lista:{
+    Genero : {
             "Id": Discancia_Genero ,
             "Name": genero
     }
-    json.dump(Lista, genero, Discancia_Genero)
-    cr.loadData(Lista, UBICAION)
+    cr.loadData(dict, UBICAION) 
 
 
 def Lista_Genero():

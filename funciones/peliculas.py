@@ -8,9 +8,25 @@ def Creador_Pelicula():
     print("Creando Pelicula")
     Peliculas = input("Ingrese el Pelicula que quiere agregar")
     UBICAION ="Peliculas.json"
-    for i, key in Peliculas.value():
-        input(f" Ingrese el atributo del Pelicula"[key])
-    cr.escritura(UBICAION, Peliculas)
+    pelicula =input("pelicula")
+    id =input("id")
+    name =input("name")
+    duracion = input("duracion")
+    sinopsis =input("Sinopsis")
+    genero =input("generos")
+    actores =input("Actores")
+    formato = input("formato")
+    id:{
+        pelicula, 
+        id,
+        name,
+        duracion,
+        sinopsis,
+        genero,
+        actores,
+        formato
+    }
+    cr.loadData(dict, UBICAION)
 
 def Editor_Pelicula():
     URL = "peliculas.json"

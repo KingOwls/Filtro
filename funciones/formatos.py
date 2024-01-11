@@ -17,7 +17,7 @@ def Creador_formato():
             formato
         }
     }
-    cr.escritura(UBICAION, formato)
+    cr.loadData(dict, UBICAION)
 
 def Lista_formato():
     for key, value in formatos.items():

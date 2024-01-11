@@ -1,9 +1,5 @@
 import funciones.corefile as cr
-
-
-
-
-
+import json as json 
 def Creador_Genero():
     UBICAION ="generos.json"
     print("Creando Genero")
@@ -13,7 +9,7 @@ def Creador_Genero():
             "Id": Discancia_Genero ,
             "Name": genero
     }
-
+    json.dump(Lista, genero, Discancia_Genero)
     cr.loadData(Lista, UBICAION)
 
 

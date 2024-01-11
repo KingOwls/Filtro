@@ -2,6 +2,7 @@ import funciones.corefile as cr
 import funciones.actores as act
 import funciones.formatos as form
 import funciones.generos as gn
+import json as pel
 
 def Creador_Pelicula():
     print("Creando Pelicula")
